@@ -1,0 +1,3 @@
+python -B pacman.py
+python -B pacman.py --layout smallMaze --pacman GoWestAgent --zoom 1
+python -B pacman.py -l smallMaze -p GoWestAgent -z 1
