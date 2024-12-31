@@ -1,5 +1,6 @@
 
 # Enhanced Pacman Game
+![Pacman Game Preview](img/pacman.png)
 
 This project is a customized version of the classic Pacman game. The primary objective is to navigate Pacman through a maze to collect all food pellets while ensuring that Pacman visits all four corners of the map. Unlike the original game, this version has **no ghosts**, allowing the focus to be on pathfinding and optimization.
 
@@ -9,7 +10,7 @@ This project is a customized version of the classic Pacman game. The primary obj
 - **Search Algorithms**: Three search algorithms are implemented to guide Pacman efficiently:
   - **Depth-First Search (DFS)**
   - **Uniform Cost Search (UCS)**
-  - **A* Search (A\*)**
+  - **A\* Search (A\*)**
 
 ## Instructions
 
@@ -62,18 +63,8 @@ python -B pacman.py -l bigMaze -p AStarFoodSearchAgent -z 0.5
 - Combines UCS with a heuristic to prioritize nodes closer to the goal.
 - Efficient and guarantees the shortest path.
 
-## File Structure
-- `pacman.py`: Main game logic.
-- `SearchAgents.py`: Search algorithms and agent definitions.
-- `Layouts/`: Contains maze layouts.
-
-## Future Enhancements
-- Add more maze variations with different levels of complexity.
-- Introduce new constraints or objectives for Pacman.
-- Visualize algorithm performance metrics in real-time.
-
-## License
-This project is for educational purposes. Feel free to use and modify it for your learning.
-
----
-Enjoy the game and explore the power of search algorithms!
+### Example Output
+```bash
+Path found with total cost of 802 in 0.5 seconds
+Search nodes expanded: 2092
+```
