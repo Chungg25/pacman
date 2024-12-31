@@ -1,3 +1,18 @@
 python -B pacman.py
 python -B pacman.py --layout smallMaze --pacman GoWestAgent --zoom 1
 python -B pacman.py -l smallMaze -p GoWestAgent -z 1
+
+// DFS
+python -B pacman.py -l smallMaze -p DfsFoodSearchAgent -z 0.5
+python -B pacman.py -l mediumMaze -p DfsFoodSearchAgent -z 0.5
+python -B pacman.py -l bigMaze -p DfsFoodSearchAgent -z 0.5
+
+// UCS
+python -B pacman.py -l smallMaze -p UcsFoodSearchAgent -z 0.5
+python -B pacman.py -l mediumMaze -p UcsFoodSearchAgent -z 0.5
+python -B pacman.py -l bigMaze -p UcsFoodSearchAgent -z 0.5
+
+// A*
+python -B pacman.py -l smallMaze -p AStarFoodSearchAgent -z 0.5
+python -B pacman.py -l mediumMaze -p AStarFoodSearchAgent -z 0.5
+python -B pacman.py -l bigMaze -p AStarFoodSearchAgent -z 0.5
